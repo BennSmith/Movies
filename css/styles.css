@@ -1,0 +1,361 @@
+* {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 400;
+    /**/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body,
+html {
+    width: 100%;
+}
+
+
+/** TYPOGRAPHY **/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0.5rem 0rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h5 small {
+    font-size: 1.25rem;
+    padding: 2rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+hr {
+    border: 1px solid lightgray;
+    height: 2px;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+
+/** ERROR BANNER **/
+
+.err-banner {
+    background-color: crimson;
+    color: white;
+    padding: 2rem;
+    width: 100%;
+}
+
+
+/** NAVIGATION **/
+
+.nav-bar {
+    align-content: center;
+    align-items: center;
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /**/
+    height: 3.5rem;
+    line-height: 3.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.nav-right,
+.nav-center,
+.nav-left {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    /**/
+    height: inherit;
+    line-height: inherit;
+    padding: 0rem 1rem;
+}
+
+.nav-left {
+    justify-content: flex-start;
+}
+
+.nav-right {
+    justify-content: flex-end;
+}
+
+.nav-item {
+    color: #BDBDBD;
+    font-size: 0.9375rem;
+    letter-spacing: 1.25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    /**/
+    height: inherit;
+    line-height: inherit;
+    padding: 0rem 1rem;
+}
+
+.nav-item:hover {
+    color: #FFFFFF;
+}
+
+
+/** APP **/
+
+.app {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /**/
+    padding-top: 7rem;
+    width: 100%;
+}
+
+.purchase-page {
+    height: calc(100vh - 7rem);
+    /*padding-top: 7rem;*/
+    top: 0;
+    width: 100%;
+}
+
+
+/** FILTER BAR **/
+
+.filter-bar {
+    align-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /**/
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0rem 3rem;
+    position: fixed;
+    top: 3.5rem;
+    width: 100%;
+    z-index: 10;
+}
+
+.heading {
+    letter-spacing: 1px;
+}
+
+.filter-bar label {
+    font-size: 0.875rem;
+    /**/
+    margin-right: 1rem;
+}
+
+.filter-bar select {
+    font-size: 0.875rem;
+    /**/
+    width: 10rem;
+    margin-right: 3rem;
+}
+
+.filter-btn {
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    /**/
+    border: 1px solid lightgray;
+    border-radius: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    width: 10rem;
+}
+
+.filter-btn:hover {
+    background-color: lightgray;
+}
+
+.filter-btn:focus {
+    background-color: grey;
+    outline: none;
+}
+
+
+/** RESULTS **/
+
+.results-grid {
+    align-content: center;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /**/
+    width: 100%;
+}
+
+[class*='col-'] {
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /**/
+    padding: 2rem;
+}
+
+.col-one {
+    width: 25%;
+}
+
+.col-two {
+    width: 75%;
+}
+
+
+/** MOVIE RELATED **/
+
+.poster-img {
+    background-color: lightgrey;
+    height: auto;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.purchase-btn,
+.return-btn {
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    /**/
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 2rem;
+    /**/
+    height: 2rem;
+    line-height: 2rem;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    width: 8rem;
+}
+
+.purchase-btn:hover,
+.return-btn:hover {
+    background-color: lightgray;
+}
+
+.purchase-btn:focus,
+.return-btn:focus {
+    background-color: grey;
+    outline: none;
+}
+
+.tag-span {
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.tag-span p {
+    border: 1px solid grey;
+    border-radius: 1.5rem;
+    font-size: 0.75rem;
+    /**/
+    line-height: 1.5rem;
+    height: 1.5rem;
+    margin: 0rem 0.5rem 0rem 0rem;
+    padding: 0rem 1rem;
+}
+
+.ticket-input {
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /**/
+    line-height: 2rem;
+    height: 2rem;
+    margin: 1rem 0rem;
+}
+
+.ticket-input label {
+    font-size: 1rem;
+    /**/
+    line-height: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.ticket-input input {
+    font-size: 1rem;
+    /**/
+    line-height: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    padding: 0rem 0rem 0rem 1rem;
+    width: 4rem;
+}
+
+.cart-btn {
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    /**/
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 2rem;
+    /**/
+    height: 2rem;
+    line-height: 2rem;
+    margin: 1rem 0rem;
+    width: 50%;
+}
+
+.cart-btn:hover {
+    background-color: lightgray;
+}
+
+.cart-btn:focus {
+    background-color: grey;
+    outline: none;
+}
